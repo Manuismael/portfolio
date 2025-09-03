@@ -126,13 +126,9 @@ export class MainComponent {
 
     emailjs.sendForm('service_mvxzqav', 'template_cicrnm9', e.target as HTMLFormElement, 'P6TwN5FZSu8Kt5F2H')
       .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-        alert('Email envoyé avec succès !');
       }, (error) => {
-        console.log(error.text);
-        alert('Erreur lors de l\'envoi de l\'email');
       });
-      
+
     (e.target as HTMLFormElement).reset();
   }
 
