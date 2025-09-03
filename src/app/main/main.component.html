@@ -1,0 +1,317 @@
+<body class="font-inter bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+  <div id="splash-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black">
+    <h1 class="text-white font-space text-5xl">Emmanuel IYANDA</h1>
+  </div>
+  <nav
+    class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/50 dark:border-gray-700/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="font-space font-medium text-2xl">
+          Emmanuel Iyanda
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#accueil" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Accueil</a>
+          <a href="#apropos" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">À
+            propos</a>
+          <a href="#projets" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Projets</a>
+          <a href="#experiences"
+            class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Expériences</a>
+          <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Contact</a>
+        </div>
+        <!-- <button id="theme-toggle" class="p-2 rounded-lg glassmorphism hover:neon-glow transition-all duration-300">
+          <div class="w-5 h-5 flex items-center justify-center">
+            <i class="ri-sun-line dark:hidden"></i>
+            <i class="ri-moon-line hidden dark:block"></i>
+          </div>
+        </button>
+        <button id="langToggle"
+          class="px-3 py-1 rounded-button text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">
+          EN
+        </button> -->
+      </div>
+    </div>
+  </nav>
+  <section id="accueil" class="min-h-screen flex items-center relative overflow-hidden bg-black">
+    <div class="absolute inset-0">
+      <div
+        class="absolute inset-0 bg-[url('background.jpg')] bg-cover bg-center opacity-30">
+      </div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+      <div class="flex flex-col items-start justify-center">
+        <h1 class="text-white font-space font-bold text-6xl sm:text-8xl lg:text-9xl mb-6">
+          CREATIVE<br>
+          <span class="text-gray-500">DEVELOPER</span>
+        </h1>
+        <div class="flex items-center gap-4 text-gray-400 font-mono mb-8">
+          <span class="text-primary">//</span>
+          <span class="text-lg">SOLUTIONS WEB PERFORMANTES.</span>
+        </div>
+        <p class="text-gray-400 max-w-2xl mb-12 text-lg">
+          Développeur full-stack passionné, spécialisé dans la création d’applications web performantes et sécurisées. Toujours prêt à relever de nouveaux défis techniques et à construire des produits qui comptent.
+        </p>
+        <div class="flex items-center gap-6">
+          <button
+            class="group relative px-8 py-4 bg-transparent border border-primary text-primary font-semibold !rounded-none hover:bg-primary hover:text-white transition-all duration-300 overflow-hidden">
+            <span class="relative z-10">EXPLORE MON TRAVAIL</span>
+            <div
+              class="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+            </div>
+          </button>
+          <div class="flex items-center gap-2 text-gray-400">
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-arrow-down-line"></i>
+            </div>
+            <span>Scroll pour découvrir</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="apropos" class="py-20 bg-white dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <h2 class="font-space font-bold text-4xl mb-6 gradient-text">À propos de moi</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+            Je suis animé par la volonté de concevoir des solutions numériques modernes et utiles. Mon approche repose
+            autant sur mes compétences techniques que sur mes qualités personnelles : esprit analytique, créativité et
+            polyvalence.
+          </p>
+          <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+            Je me distingue par ma capacité à transformer des besoins complexes en solutions simples et performantes,
+            tout en gardant une vision claire des objectifs à atteindre.
+            J’aime travailler de manière méthodique, résoudre des problèmes avec logique et proposer des approches
+            innovantes.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">Innovation</span>
+            <span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium">Performance</span>
+            <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">Collaboration</span>
+            <span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium">Flexible</span>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="neumorphism p-8 rounded-2xl">
+            <h3 class="font-space font-semibold text-2xl mb-8">Stack Techniques</h3>
+            <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              <div class="group flex flex-col items-center" *ngFor="let stack of stacks">
+                <div
+                  class="w-16 h-16 flex items-center justify-center mb-3 bg-gray-100 dark:bg-gray-800 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                  <div class="w-10 h-10 flex items-center justify-center">
+                    <i class="{{stack.icone}}  text-3xl"></i>
+                  </div>
+                </div>
+                <span class="text-sm font-medium">{{stack.libelle}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-space font-bold text-4xl mb-4 gradient-text">Mes projets</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Découvrez une sélection de mes réalisations récentes, alliant innovation technique et design
+          moderne.
+        </p>
+      </div>
+
+      <!-- SCROLL EN LIGNE SUR WEB, LISTE SUR MOBILE -->
+      <div class="relative">
+        <div #scrollContainer
+          class="flex flex-col md:flex-row gap-8 overflow-hidden overflow-x-scroll scroll-container  snap-x snap-mandatory scroll-smooth">
+
+          <div *ngFor="let project of projects"
+            class="glassmorphism min-w-[300px] md:min-w-[350px] lg:min-w-[400px] rounded-2xl overflow-hidden hover:neon-glow transition-all duration-300 fade-in group snap-start">
+            <div class="relative overflow-hidden">
+              <img src="{{project.image}}" alt="E-commerce Platform"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-space font-semibold text-xl mb-2">{{project.name}}</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                {{project.description}}
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded"
+                  *ngFor="let tag of project.tags">{{tag}}</span>
+              </div>
+              <!-- <div class="flex gap-3">
+                <button
+                  class="flex-1 px-4 py-2 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+                  <div class="w-4 h-4 inline-flex items-center justify-center mr-2">
+                    <i class="ri-external-link-line"></i>
+                  </div>
+                  Démo
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 !rounded-button hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">
+                  <div class="w-4 h-4 inline-flex items-center justify-center mr-2">
+                    <i class="ri-github-line"></i>
+                  </div>
+                  GitHub
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences" class="py-20 bg-white dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-space font-bold text-4xl mb-4 gradient-text">Expériences</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Mon parcours professionnel dans le développement web.
+        </p>
+      </div>
+      <div class="space-y-12">
+        <div class="flex gap-8 items-start fade-in" *ngFor="let experience of experiences">
+          <div class="w-32 flex-shrink-0 text-right">
+            <span class="text-sm font-medium text-gray-500">{{experience.date_deb}} - {{experience.date_fin}}</span>
+          </div>
+          <div
+            class="flex-1 relative pb-12 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-[2px] before:bg-gradient-to-b before:from-primary before:to-secondary">
+            <div
+              class="relative pl-8 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-primary before:-translate-x-1/2">
+              <h3 class="font-space font-semibold text-xl mb-2">{{experience.title}}</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                {{experience.description}}
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded" *ngFor="let tag of experience.tags">{{tag}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="font-space font-bold text-4xl mb-4 gradient-text">Contactez-moi</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">
+          Prêt à collaborer ? Discutons de votre prochain projet !
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="fade-in">
+          <form (submit)="sendEmail($event)" class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Nom complet</label>
+              <input type="text"
+                class="w-full px-4 py-3 border-none bg-white dark:bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary outline-none transition-all"
+                placeholder="Votre nom" name="name">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Email</label>
+              <input type="email"
+                class="w-full px-4 py-3 border-none bg-white dark:bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary outline-none transition-all"
+                placeholder="votre@email.com" name="email">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Sujet</label>
+              <input type="text"
+                class="w-full px-4 py-3 border-none bg-white dark:bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary outline-none transition-all"
+                placeholder="Sujet de votre message" name="title">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Message</label>
+              <textarea rows="5"
+                class="w-full px-4 py-3 border-none bg-white dark:bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary outline-none transition-all resize-none"
+                placeholder="Décrivez votre projet..." name="message"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full px-8 py-4 bg-primary text-white font-semibold !rounded-button hover:bg-primary/90 neon-glow transition-all duration-300 whitespace-nowrap">
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+        <div class="fade-in">
+          <div class="neumorphism p-8 rounded-2xl h-full flex flex-col justify-center">
+            <h3 class="font-space font-semibold text-2xl mb-6">Restons connectés</h3>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-mail-line text-primary text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-medium">Email</p>
+                  <p class="text-gray-600 dark:text-gray-400">ismaeliyanda&#64;gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                  <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-phone-line text-secondary text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-medium">Téléphone</p>
+                  <p class="text-gray-600 dark:text-gray-400">+229 01 52 02 27 57</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-map-pin-line text-primary text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-medium">Localisation</p>
+                  <p class="text-gray-600 dark:text-gray-400">Cotonou, Bénin</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Suivez-moi sur les réseaux</p>
+              <div class="flex space-x-4">
+                <a href="#"
+                  class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 neon-glow">
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i class="ri-github-line"></i>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 neon-glow">
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i class="ri-linkedin-line"></i>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 neon-glow">
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i class="ri-twitter-line"></i>
+                  </div>
+                </a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-8 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p class="text-gray-600 dark:text-gray-400">
+          © 2025 Emmanuel IYANDA . Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
