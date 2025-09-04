@@ -5,7 +5,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
