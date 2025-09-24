@@ -115,7 +115,7 @@ export class MainComponent {
     {
       date_deb: "Aout 2025",
       date_fin: "Présent",
-      title: "Elites Studio",
+      title: "ICO LABS",
       description: "Dévéloppeur fullstack. Dévéloppement de solutions digitales, stratégie de digitalisation.",
       tags: ["NestJS", "Angular", "Tailwind", "Mongo DB", "Firebase", "MySQL", "Scrum", "UML", "IA"],
     },
