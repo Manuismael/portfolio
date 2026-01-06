@@ -74,6 +74,23 @@ export class MainComponent {
   ];
 
   projects = [
+
+    {
+      name: "UGL PASS",
+      description: "Billetterie en ligne pour l'Utimate Gaming Legends, un évènement de jeux vidéos",
+      image: "ugl_billeterie.png",
+      tags: ["PHP", "Boostrap", "MySQL"],
+      link: "https://ugl.onrender.com/",
+    },
+
+    {
+      name: "Rafiki",
+      description: "Faciliter les connexions interculturelles et l’échange d’informations pratiques entre personnes du monde entier, en particulier dans un contexte éducatif ou de mobilité.",
+      image: "rafiki.png",
+      tags: ["NestJS", "Angular", "Tailwind", "MySQL", "PWA"],
+      link: "https://zerafiki.vercel.app/",
+    },
+
     {
       name: "Learn Fast",
       description: "Application web basée sur l'IA permettant d'assister les étudiants pendant les révisions",
@@ -88,19 +105,7 @@ export class MainComponent {
       tags: ["Flutter", "MySQL"],
     },
 
-    {
-      name: "UGL PASS",
-      description: "Billetterie en ligne pour l'Utimate Gaming Legends, un évènement de jeux vidéos",
-      image: "ugl_billeterie.png",
-      tags: ["PHP", "Boostrap", "MySQL"],
-    },
 
-    {
-      name: "Rafiki",
-      description: "Faciliter les connexions interculturelles et l’échange d’informations pratiques entre personnes du monde entier, en particulier dans un contexte éducatif ou de mobilité.",
-      image: "rafiki.png",
-      tags: ["NestJS", "Angular", "Tailwind", "MySQL"],
-    }
   ]
 
   experiences = [
