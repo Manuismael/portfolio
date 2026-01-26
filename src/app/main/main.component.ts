@@ -92,6 +92,14 @@ export class MainComponent {
     },
 
     {
+      name: "FOSERV",
+      description: "Site web du forum des Clubs Services du Bénin organisé par le Rotary.",
+      image: "foserv.png",
+      tags: ["Tailwind", "HTML"],
+      link: "https://foserv.vercel.app/",
+    },
+
+    {
       name: "Learn Fast",
       description: "Application web basée sur l'IA permettant d'assister les étudiants pendant les révisions",
       image: "learnfasst.png",
@@ -198,7 +206,7 @@ export class MainComponent {
     e.preventDefault();
     emailjs.sendForm('service_mvxzqav', 'template_cicrnm9', e.target as HTMLFormElement, 'P6TwN5FZSu8Kt5F2H')
       .then((result: EmailJSResponseStatus) => {
-      }, (error) => {
+      }, (error:any) => {
       });
   }
 
